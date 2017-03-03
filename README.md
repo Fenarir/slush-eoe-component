@@ -13,13 +13,7 @@ $ npm install -g slush-eoe-component
 
 ### Usage
 
-Create a new folder for your project:
-
-```bash
-$ mkdir my-slush-eoe-component
-```
-
-Run the generator from within the new folder:
+Run the generator from within a folder of your choice:
 
 ```bash
 $ cd my-slush-eoe-component && slush eoe-component

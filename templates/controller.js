@@ -2,16 +2,16 @@
     'use strict';
 
     angular
-        .module('eoe.<%= moduleName %>')
+        .module('<%= moduleName %>')
         .controller('<%= controllerName %>', <%= controllerName %>);
 
     <%= controllerName %>.$inject = ['$log'];
 
     function <%= controllerName %>($log) {
         var vm = this,
-			defaults = {};
-        
-		vm.$onInit = $onInit;
+            defaults = {};
+
+        vm.$onInit = $onInit;
 
         ////////////
 

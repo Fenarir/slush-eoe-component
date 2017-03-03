@@ -2,13 +2,17 @@
     'use strict';
 
     angular
-        .module('eoe.<%= moduleName %>')
-        .component('eoe<%= componentNameCapitalised %>', {
-            transclude: {
-            },
-            templateUrl: ResolveUrl('~/Common/AngularJS/components/<%= componentName %>/<%= componentName %>.html'),
+        .module('<%= moduleName %>')
+        .component('<%= namespace + componentNameCapitalised %>', {
             controller: '<%= controllerName %>',
             controllerAs: 'vm',
+            templateUrl: ['resolveUrl', function (resolveUrl) {
+                return resolveUrl.resolve({
+                    url: 'Common/AngularJS/components/<%= componentName %>/<%= componentName %>.html'
+                });
+            }],
+            transclude: {
+            },
             bindings: {
             }
         });
