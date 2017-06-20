@@ -1,7 +1,7 @@
 {
     "name": "slush-eoe-component",
     "description": "Generate an AngularJS component for use with the eoe namespace",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "homepage": "https://github.com/kevincorry/slush-eoe-component",
     "author": {
         "name": "Kevin Corry",
